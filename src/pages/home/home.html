@@ -1,17 +1,54 @@
+
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      <img alt="logo" src="assets/img/logoxmedia.png"
+      height="40">
+     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding style='background-color: #2a4066'>
+
+  <ion-slides pager='true' loop='true' autoplay='10000' style="max-height:40%">
+    <ion-slide>
+      <img src="assets/img/slide1.jpg" style=" height: auto; margin-left: auto; margin-right: auto;">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/slide2.jpg" style=" height: auto; margin-left: auto; margin-right: auto;">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/slide3.jpg" style=" height: auto; margin-left: auto; margin-right: auto;">
+    </ion-slide>
+  </ion-slides>
+  <div class="spacer" style="height: 30px;"></div>
+  <div class="container">
+
+    <div button class="butcolmenu" (click)="notif()">
+    <img src="assets/img/movie.png" class="imgbutton">
+    </div>
+
+    <div button class="butcolmenu">
+      <img src="assets/img/tv.png" class="imgbutton">
+    </div>
+
+    <div button class="butcolmenu">
+      <img src="assets/img/order.png" class="imgbutton">
+    </div>
+
+  </div>
+  <div class="spacer" style="height: 30px;"></div>
+  <div class="container">
+    <div  button class="butcolmenu">
+    <img src="assets/img/pembayaran.png" class="imgbutton">
+
+    </div>
+    <div button class="butcolmenu">
+      <img src="assets/img/pembelian.png" class="imgbutton">
+
+    </div>
+    <div button class="butcolmenu">
+      <img src="assets/img/report.png" class="imgbutton">
+    </div>
+  </div>
 </ion-content>
